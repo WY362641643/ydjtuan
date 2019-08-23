@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <title>
+      {% block title %}
+      {% endblock %}
+  </title>
+
+  <link rel="shortcut icon" href="http://www.ydjituan.com/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/static/css/base.css">
+  <link rel="stylesheet" href="/static/css/swiper.min.css">
+{% block css %}
+{% endblock %}
+
+  <script src="/static/js/jquery-3.3.1.min.js"></script>
+  <script src="http://www.ydjituan.com/js/swiper.min.js"></script>
+  <script type="text/javascript" src="http://www.ydjituan.com/js/scrolloverflow.min.js"></script>
+{% block js %}
+{% endblock %}
+  <script type="text/javascript">if(window.location.toString().indexOf('pref=padindex') != -1){}else{if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){if(window.location.href.indexOf("?mobile")<0){try{if(/Android|Windows Phone|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)){window.location.href="/m/list.php?tid=3";}else if(/iPad/i.test(navigator.userAgent)){}else{}}catch(e){}}}}</script>
+{% block stylecss %}
+{% endblock %}
+
+</head>
+<body>
+  <!-- 导航 -->
+  <!-- 导航 -->
+<div class="head">
+    <div class="head-in">
+        <div class="logo fl">
+            <a href="/"><img src="/static/images/foot/logo.png" alt=""></a>
+      	</div>
+        <div class="nav fr">
+            <ul class="clearfix">
+                <li class="nav-active"><a href="/">首页</a></li>
+                <li><a href="/jtjj/">集团简介</a></li>
+                <li class="downdrop">
+                    <a href="/jtyw/">集团业务</a>
+                    <dl>
+                        <dd><a href="/jtyw/ydkj/">元典科技</a></dd>
+                        <dd><a href="/jtyw/qxkj/">千享科技</a></dd>
+                        <dd><a href="/jtyw/whsc/">望海水产</a></dd>
+                        <dd><a href="/jtyw/yidian/">壹典摄影</a></dd>
+                    </dl>
+                </li>
+                <li><a href="/hxtd/">核心团队</a></li>
+                <li><a href="/hzhb/">合作伙伴</a></li>
+                <li><a href="/xwzx/jtdt/">集团动态</a></li>
+                <li><a href="/lxwm/">联系我们</a></li>
+                <li><a href="/rczp/">人才招聘</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+  {% block body %}
+  {% endblock %}
+  <!-- 底部 -->
+  <!-- 底部 -->
+<div class="footer">
+	<div class="container">
+		<div class="foot-top">
+			<div class="foot-nav">
+				<ul>
+                    <li><a href="/jtjj/">集团简介</a><div class="line"></div><div class="up_line"></div></li>
+					<li class="downdrop"><a href="/jtyw/">集团业务</a>
+						<dl>
+							<dd><a href="/jtyw/ydkj/">元典科技</a></dd>
+							<dd><a href="/jtyw/qxkj/">千享科技</a></dd>
+							<dd><a href="/jtyw/whsc/">望海水产</a></dd>
+							<dd><a href="/jtyw/yidian/">壹典摄影</a></dd>
+						</dl>
+						<div class="line"></div>
+						<div class="up_line"></div>
+					</li>
+					<li><a href="/hxtd/">核心团队</a><div class="line"></div><div class="up_line"></div></li>
+					<li><a href="/hzhb/">合作伙伴</a><div class="line"></div><div class="up_line"></div></li>
+					<li><a href="/xwzx/">新闻中心</a><div class="line"></div><div class="up_line"></div></li>
+					<li><a href="/lxwm/">联系我们</a><div class="line"></div><div class="up_line"></div></li>
+					<li><a href="/rczp/">人才招聘</a><div class="line"></div><div class="up_line"></div></li>
+				</ul>
+			</div>
+			<div class="foot-contact fr">
+				<h5>咨询热线</h5>
+				<p class="phone">400-0399-386</p>
+				<div class="qq"><a href="javascript:;" onclick="qqclick()">立即咨询</a></div>
+			</div>
+			<div class="foot-top-line fr"></div>
+		</div>
+		<div class="foot-links">
+			<span>友情链接：</span>
+			<a href='http://www.szyuandian.com' target='_blank'>元典科技</a> <a href='http://www.1000-x.cn/' target='_blank'>千享科技</a> <a href='http://www.91wanghai.com' target='_blank'>望海水产</a> <a href='https://www.1dsy.net' target='_blank'>壹典摄影</a>
+		</div>
+	</div>
+	<div class="foot-hr"></div>
+	<div class="container">
+		<div class="foot-bottom clearfix">
+			<div class="address fl">
+				地址：深圳市龙华区东环二路8号中执时代广场B座23、24楼
+			</div>
+			<div class="beian fr">
+				Copy Right &copy;深圳市元典科技发展有限公司 | <a href="/data/sitemap.html">网站地图</a> | <a href="http://www.miitbeian.gov.cn/" rel="nofollow" target="_blank"> 粤ICP备15102969号-15</a>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+	function qqclick(){
+		window.open("http://wpa.qq.com/msgrd?v=3&uin=4000399386&site=qq&menu=yes");
+	}
+</script>
+<script>
+	var _hmt = _hmt || [];
+
+	(function() {
+
+		var hm = document.createElement("script");
+
+		hm.src = "https://hm.baidu.com/hm.js?d808176521e8007b265db24c3dc54edb";
+
+		var s = document.getElementsByTagName("script")[0];
+
+		s.parentNode.insertBefore(hm, s);
+
+	})();
+</script>
+
+{% block bodyfoot %}
+{% endblock %}
+
+{% block topcontrol %}
+  <div id="topcontrol" title="返回顶部" style="position: fixed; bottom: 80px; right: 30px; opacity: 1; cursor: pointer;"><img src="/static/images/foot/topback.gif" style="width:54px; height:54px; border:0;"></div>
+{% endblock %}
+</body>
+{% block htmlfoot %}
+{% endblock %}
+</html>

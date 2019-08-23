@@ -1,0 +1,326 @@
+{% extends 'parent_template.html' %}
+{% block title %}集团业务  /  望海水产_元典集团{% endblock %}
+
+{% block css %}
+	<link rel="stylesheet" type="text/css" href="/static/css/group.css">
+{% endblock %}
+
+{% block js %}
+    <style type="text/css">
+        body{
+            font-family: 'Raleway, sans-serif';
+        }
+        .swiper1 {margin-top: 38px;height: 100%; }
+        .swiper-pagination{position: relative;}
+        .swiper-container-horizontal>.swiper-pagination-bullets{top: 0; left: 0;height: 65px;width: 100%; margin-bottom: 6px;}
+        .swiper-pagination-bullet {width: 196px; height: 65px;line-height: 65px;font-size: 23px;color:#fff;opacity: 1; background: #0082c5; border-radius: 0;}
+        .swiper-container-horizontal>.swiper-pagination-bullets {display: flex;justify-content: space-between;}
+        .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{margin: 0;}
+        .swiper-pagination-bullet-active { background: #d00115; }
+
+        /**/
+    </style>
+{% endblock %}
+
+{% block body %}
+	<!-- 内容主体部分 -->
+    <div class="main wh">
+        <!-- banner -->
+        <div class="banner wh-banner">
+            <div class="piece-box piece-box1">
+                <div class="piece piece1"></div>
+            </div>
+            <div class="piece-box piece-box2">
+                <div class="piece piece2"></div>
+            </div>
+            <div class="banner-txt in1200">
+                <img src="/static/images/whsc/wh_txt.png" alt="">
+            </div>
+        </div>
+
+        <!-- 关于 -->
+        <div class="wh-about">
+            <div class="wh-about-box in1200 clearfix">
+                <div class="wh-about-video">
+                    <video loop poster="/static/images/whsc/wh_video_about.jpg">
+                        <source src="http://p9zyfoqv0.bkt.clouddn.com/2018%E5%B9%B46%E6%9C%88%E6%9C%80%E6%96%B0%E7%89%88%E5%AE%A3%E4%BC%A0%E8%A7%86%E9%A2%91.mp4">
+                    </video>
+                    <div class="play-btn"></div>
+                </div>
+                <div class="wh-about-txt">
+                    <h3>about us</h3>
+                    <h5>| 望海·黄河生态小龙虾养殖基地</h5>
+                    <p>望海水产响应政府扶贫政策，与当地政府合作建立万亩小龙虾养殖基地，通过成立一家集小龙虾养殖承包、技术培训、创业扶持、渠道销售为一体的“互联网+新农业”的新时代养殖企业，以标准化、规模化的公司发展，为养殖户提供虾塘、虾苗、技术培训、回购成虾销售一条龙服务，让当地贫困农民真真正正享受到政策扶持，走上养殖致富之路。</p>
+                    <p class="link-more"><a href="http://www.91wanghai.com/">了解更多
+                        <span class="arrow">
+                            <i class="mask"></i>
+                        </span>
+                    </a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 营销 -->
+        <div class="marketing">
+            <h3 class="title-big">基建＋技术+营销</h3>
+            <h5 class="title-mini">打造立体水产养殖基地</h5>
+            <div class="marke-box in1200 clearfix">
+                <div class="swiper-container swiperList">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="/static/images/whsc/wh1.jpg" >
+                            <div class="txt">
+                                <h4>科学的虾塘建设</h4>
+                                <div class="line"></div>
+                                <p>The HaTang construction <br> of science</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="txt">
+                                <h4>专业的养殖技术  </h4>
+                                <div class="line"></div>
+                                <p>Professional breeding <br>technology</p>
+                            </div>
+                            <img src="/static/images/whsc/wh2.jpg" >
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/static/images/whsc/wh3.jpg" >
+                            <div class="txt">
+                                <h4>线上线下完善的营销体系 </h4>
+                                <div class="line"></div>
+                                <p>Online perfect marketing <br>system </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="txt">
+                                <h4>优质虾苗供给  品质好易存活</h4>
+                                <div class="line"></div>
+                                <p>Good quality easy to survive</p>
+                            </div>
+                            <img src="/static/images/whsc/wh4.jpg" >
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/static/images/whsc/wh5.jpg" >
+                            <div class="txt">
+                                <h4>政府扶持，优质资源</h4>
+                                <div class="line"></div>
+                                <p>Government support, <br>high  quality resources</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="txt">
+                                <h4>优越环境，养虾圣地</h4>
+                                <div class="line"></div>
+                                <p>Superior environment,<br> raise shrimp </p>
+                            </div>
+                            <img src="/static/images/whsc/wh6.jpg" >
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+
+        <!-- 实力 -->
+        <div class="wh-power">
+            <div class="power">
+                <div class="power-title">
+                    <h3>看得见的实力</h3>
+                    <p>专业&nbsp;&nbsp;·&nbsp;&nbsp;标准&nbsp;&nbsp;·&nbsp;&nbsp;规模</p>
+                </div>
+                <div class="swiper-container in1200 swiper1">
+                    <div class="swiper-pagination swiper-pagination1"></div>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="/static/images/whsc/wh_a.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/static/images/whsc/wh_b.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/static/images/whsc/wh_c.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/static/images/whsc/wh_d.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/static/images/whsc/wh_e.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/static/images/whsc/wh_f.jpg" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 视频列表 -->
+            <div class="wh-video-box">
+                <div class="swiper-container in1200 swiper2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <video src="" poster="/static/images/whsc/wh_video1.jpg"></video>
+                            <p>标准虾塘</p>
+                            <div class="play-button" data-video="http://p7s9t4320.bkt.clouddn.com/bzyt.mp4"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <video src="" poster="/static/images/whsc/wh_video2.jpg"></video>
+                            <p>调节水质</p>
+                            <div class="play-button" data-video="http://p7s9t4320.bkt.clouddn.com/sztj.mp4"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <video src="" poster="/static/images/whsc/wh_video3.jpg"></video>
+                            <p>管理水草</p>
+                            <div class="play-button" data-video="http://p7s9t4320.bkt.clouddn.com/scgl.mp4"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <video src="" poster="/static/images/whsc/wh_video4.jpg"></video>
+                            <p>投食喂养</p>
+                            <div class="play-button" data-video="http://p7s9t4320.bkt.clouddn.com/ws.mp4"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <video src="" poster="/static/images/whsc/wh_video5.jpg"></video>
+                            <p>捕捞成虾</p>
+                            <div class="play-button" data-video="http://p7s9t4320.bkt.clouddn.com/pcx.mp4"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <video src="" poster="/static/images/whsc/wh_video6.jpg"></video>
+                            <p>收购成虾</p>
+                            <div class="play-button" data-video="http://p7s9t4320.bkt.clouddn.com/cxhs.mp4"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <video src="" poster="/static/images/whsc/wh_video7.jpg"></video>
+                            <p>技术培训</p>
+                            <div class="play-button" data-video="http://p7s9t4320.bkt.clouddn.com/jspx.mp4"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            <!-- 底部 -->
+            <div class="wh-video">
+                <div class="wh-foot">
+                    <h4>黄河生态小龙虾养殖基地</h4>
+                    <h3>全国诚招养殖承包</h3>
+                    <a href="javascript:;">携手望海&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 养殖致富</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 视频弹窗 -->
+        <div class="mask-video">
+            <div class="mask-video-con">
+                <video controls src="" poster="/static/images/whsc/default_video.jpg"></video>
+                <!-- <div class="play-video"></div> -->
+                <div class="close-video"></div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+    <!-- 底部 -->
+
+{% block bodyfoot %}
+    <script>
+        var swiperList = new Swiper('.swiperList', {
+            slidesPerView: 4,
+            spaceBetween: 19,
+            freeMode: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoplay: {
+                disableOnInteraction: false,
+            },
+            loop: true,
+        });
+
+        $('.swiperList .swiper-slide').hover(function(){
+            swiperList.autoplay.stop();
+        },function(){
+            swiperList.autoplay.start();
+        })
+
+        var picSwiper = new Swiper('.swiper1', {
+            pagination: {
+                el: '.swiper-pagination1',
+                clickable: true,
+                renderBullet: function (index, className) {
+                    switch(index){
+                        case 0:text='A';break;
+                        case 1:text='B';break;
+                        case 2:text='C';break;
+                        case 3:text='D';break;
+                        case 4:text='E';break;
+                        case 5:text='F';break;
+                    }
+                    return '<span class="' + className + '">养殖基地' + text + '区</span>';
+                }
+            },
+            loop: true,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false
+            }
+        });
+
+        //鼠标滑过pagination控制swiper切换
+        for(i=0;i<picSwiper.pagination.bullets.length;i++){
+            picSwiper.pagination.bullets[i].index=i
+            picSwiper.pagination.bullets[i].onmouseover=function(){
+                picSwiper.slideTo(this.index+1);
+            }
+        }
+
+        // 视频列表
+        var viedoSwiper = new Swiper('.swiper2', {
+            slidesPerView: 4,
+            spaceBetween: 14,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            loop: true,
+        });
+
+        // 视频弹窗
+        $(".wh-video-box .play-button").click(function(){
+            var src = $(this).attr('data-video');
+            var posterimg = $(this).parent().find("video").attr("poster");
+            $(".mask-video").show();
+            $(".mask-video video")[0].src = src;
+            $(".mask-video video")[0].poster = posterimg;
+        })
+
+        // $(".mask-video .play-video").click(function(){
+        //     $(this).hide();
+        //     // $('.tanvideo video').attr('controls', true)
+        //     $(".mask-video video")[0].play();
+        // })
+
+        $(".mask-video .close-video").click(function(){
+            $(".mask-video video")[0].pause();
+            // $(".mask-video .play-video").show();
+            $(".mask-video").hide();
+            // $(".mask-video video").removeAttr('controls', true)
+        })
+
+        var aVideo = document.querySelector('.wh-about-video video');
+
+        $('.wh-about-video .play-btn').click(function(){
+            $(this).hide();
+            aVideo.play();
+            aVideo.setAttribute('controls','controls');
+        })
+
+    </script>
+    <script type="text/javascript">
+        $(function(){
+            $('.nav li').eq(2).addClass('nav-active').siblings().removeClass('nav-active')
+        })
+    </script>
+    <script type="text/javascript" src="/static/js/scrolltopcontrol.js"></script>
+{% endblock %}
+
+

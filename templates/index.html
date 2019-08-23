@@ -1,0 +1,802 @@
+{% extends 'parent_template.html' %}
+{% block title %}
+元典集团
+{% endblock %}
+
+{% block css %}
+	<link rel="stylesheet" type="text/css" href="/static/css/fullpage3.0.3.css">
+	<link rel="stylesheet" type="text/css" href="/static/css/group.css">
+{% endblock %}
+
+{% block js %}
+
+	<script type="text/javascript" src="/static/js/fullpage.js"></script>
+{% endblock %}
+
+{% block stylecss %}
+<style type="text/css">
+		body{-webkit-transform-style:preserve-3d;}
+		.fp-tableCell{vertical-align: top;}
+		.fp-controlArrow{margin-top: -10px;width: 34px;height: 34px;border: none;}
+		.fp-controlArrow.fp-prev{left: 13%;width: 34px;border: none; background: url('/static/images/index/section1_left.png');}
+		.fp-controlArrow.fp-next{left: calc(13% + 40px);left: -webkit-calc(13% + 40px);border: none; background: url('/static/images/index/section1_right.png');}
+		.fp-controlArrow.fp-prev:hover{background: url('/static/images/index/section1_left_cur.png');}
+		.fp-controlArrow.fp-next:hover{background: url('/static/images/index/section1_right_cur.png');}
+		.fp-slidesNav.fp-bottom{display: none;}
+	</style>
+{% endblock %}
+
+{% block body %}
+	<!-- 鼠标 -->
+	<div class="mouse">
+		<div class="roller"></div>
+	</div>
+	<!-- 内容主体部分 -->
+	<div id="main">
+		<!-- 第一屏 -->
+		<div class="section section1 active">
+			<div class="slide slide1">
+				<div class="slidec" style="position: relative;width: 100%;height: 100%; margin: 0 auto">
+					<div class="slidectitle" style="position:absolute;top:50%;margin-top:-161px;left:13%;color:#2f93c2;font-size:50px;">
+						<h2 style="padding-bottom:10px;">元典集团</h2>
+						<p>打造中国领先的<span style="font-weight:600;">互联网+服务基地</span></p>
+					</div>
+				</div>
+			</div>
+			<div class="slide slide2">
+				<div class="slidec" style="position: relative;width: 100%;height: 100%; margin: 0 auto">
+					<div class="slidectitle" style="position:absolute;top:50%;margin-top:-161px;left:13%;color:#2f93c2;font-size:50px;">
+						<h2 style="padding-bottom:10px;">元典集团</h2>
+						<p>打造中国领先的<span style="font-weight:600;">互联网+服务基地</span></p>
+					</div>
+				</div>
+			</div>
+			<!-- <div class="slide slide3"></div> -->
+			<!-- <div class="slide slide4"></div> -->
+		</div>
+		<!-- 第二屏 -->
+		<div class="section section2 clearfix" style="display:none;">
+			<div class="con2video">
+				<div class="con2videobox">
+						<div class="pic">
+								<video class="yuandian" style="position:absolute;z-index:-100;display:none;width: 100%;top: 50%;transform: translateY(-50%)" autoloop="" loop="" muted="muted" src="https://case.91wanghai.com/%E5%85%83%E5%85%B8%E5%AE%A3%E4%BC%A0%E7%89%87%E7%BB%88%E7%A8%BF.mp4">
+								</video>
+								<video class="qianxiang" style="position:absolute;z-index:-100;display:none;width: 100%;top: 50%;transform: translateY(-50%)" autoloop="" loop="" muted="muted" src="https://case.91wanghai.com/201812%E6%9C%88%E5%8D%83%E4%BA%AB%E7%A7%91%E6%8A%80%E5%AE%A3%E4%BC%A0%E7%89%87.mp4">
+								</video>
+								<video class="wanghai" style="position:absolute;z-index:-100;display:none;width: 100%;top: 50%;transform: translateY(-50%)" autoloop="" loop="" muted="muted" src="https://case.91wanghai.com/2018%E5%B9%B46%E6%9C%88%E6%9C%80%E6%96%B0%E7%89%88%E5%AE%A3%E4%BC%A0%E8%A7%86%E9%A2%91.mp4">
+								</video>
+								<video class="yidian" style="position:absolute;z-index:-100;display:none;width: 100%;top: 50%;transform: translateY(-50%)" autoloop="" loop="" muted="muted" src="https://case.91wanghai.com/%E9%9B%86%E5%9B%A2%E5%AE%98%E7%BD%91%E5%A3%B9%E5%85%B8%E6%91%84%E5%BD%B1.mp4">
+								</video>
+								<div class="videobg">
+										<ul>
+												<li class="pic1 left">
+													<a href="/jtyw/ydkj/">
+														<video autoloop loop muted="muted" poster="/static/images/index/video_bg_yd.png">
+																<source src="">
+														</video>
+														<div class="logImg">
+															<p style="display:none;color:#fff;"> <span>元典科技</span> <span>专注电商创业孵化</span></p>
+															<img src="/static/images/index/yd_whitelogo.png" alt="">
+														</div>
+													</a>
+
+												</li>
+												<li class="pic2 center-left">
+													<a href="/jtyw/qxkj/">
+														<video autoloop loop muted="muted" poster="/static/images/index/video_bg_qx.png">
+															<source src="">
+														</video>
+														<div class="logImg">
+															<p style="display:none;color:#fff;"> <span>千享科技</span> <span>提升品牌从千享开始</span></p>
+															<img src="/static/images/index/qx_whitelogo.png" alt="">
+														</div>
+													</a>
+												</li>
+												<li class="pic3 center-right">
+													<a href="/jtyw/whsc/">
+														<video  autoloop loop muted="muted" poster="/static/images/index/video_bg_wh.png">
+															<source src="">
+														</video>
+														<div class="logImg">
+															<p style="display:none;color:#fff;"> <span>望海水产</span><span>新农业实体水产养殖</span></p>
+															<img src="/static/images/index/wh_whitelogo.png" alt="">
+														</div>
+													</a>
+												</li>
+												<li class="pic4 right">
+													<a href="/jtyw/yidian/">
+														<video autoloop loop muted="muted" poster="/static/images/index/video_bg_yid.png">
+															<source src="">
+														</video>
+														<div class="logImg">
+															<p style="display:none;color:#fff;"> <span>壹典摄影</span><span>用镜头创造更高价值</span></p>
+															<img src="/static/images/index/yid_whitelogo.png" alt="">
+														</div>
+													</a>
+												</li>
+											</ul>
+
+								</div>
+								<div class="videobox">
+										<ul>
+											<li>
+												<div class="videobg">
+													<img src="/static/images/index/video_bg_yd.png" alt="">
+												</div>
+												<div class="logImg1" style="display:none;">
+													<p style="color:#fff;"> <span>元典科技</span> <span>专注电商创业孵化</span></p>
+												</div>
+											</li>
+											<li>
+												<div class="videobg">
+													<img src="/static/images/index/video_bg_qx.png" alt="">
+												</div>
+												<div class="logImg1" style="display:none;">
+													<p style="color:#fff;"> <span>千享科技</span> <span>提升品牌从千享开始</span></p>
+												</div>
+											</li>
+											<li>
+												<div class="videobg">
+													<img src="/static/images/index/video_bg_wh.png" alt="">
+												</div>
+												<div class="logImg1" style="display:none;">
+													<p style="color:#fff;"> <span>望海水产</span><span>新农业实体水产养殖</span></p>
+												</div>
+											</li>
+											<li>
+												<div class="videobg">
+													<img src="/static/images/index/video_bg_yid.png" alt="">
+												</div>
+												<div class="logImg1" style="display:none;">
+													<p style="color:#fff;"> <span>壹典摄影</span><span>镜头创造价值</span></p>
+												</div>
+											</li>
+										</ul>
+
+								</div>
+							</div>
+				</div>
+				<div class="con2videoboxbg"></div>
+			</div>
+		</div>
+		<!-- 第三屏 -->
+		<div class="section section3" style="display:none;">
+			<div class="con3">
+				<div class="title">
+					<h3>多元化互联网产业服务 创造更大价值</h3>
+					<p>TO CREATE MORE VALUE</p>
+				</div>
+				<ul>
+					<li>
+						<svg id="ps4-2" style="display: block;" xml:space="preserve">
+							<path d="M470,571 L470 0 0 0 0 571 470 571" fill="none"></path>
+						</svg>
+						<div class="introduction">
+							<div class="introductionT">
+								<h4><span>简介</span>INTRODUCE</h4>
+								<div class="in-detail-box">
+									<a href="/jtjj/">
+										<div class="in-detail"></div>
+									</a>
+								</div>
+								<p>
+									2012年，吕元枢先生创立元典集团。本着”责任与感恩“之心，为每一位有需求的客户提供全方位的互联网营销服务。经过6年发展，元典集团的服务项目涵盖了个人电商创业孵化、企业营销策划、品牌全网营销、企业管理咨询、技术开发、媒体渠道合作、商业摄影、水产养殖基地等多个领域，成功为50000多名客户提供优质服务。
+								</p>
+								<img src="/static/images/index/con3_1.jpg">
+							</div>
+						</div>
+					</li>
+					<li>
+						<div id="moveYuan">
+							<!-- <canvas id="canvas"></canvas> -->
+							<svg id="ps4-1" style="display: block;" xml:space="preserve">
+								<g class="computer">
+									<path d="M196,299 L196 49 q 1 -10 10 -10 L574 39 q 10 1 10 10 L585 299" ></path>
+									<path d="M572,281 L572 54 209 54 209 281 572 281" ></path>
+									<path d="M152,299 L152 309 629 309 629 300 152 299" ></path>
+									<path d="M629 309 q 1 5 -9 5 L158 314 q -8 -5 -4 -5 " ></path>
+								</g>
+								<g class="ipad">
+									<path d="M263 314 L55 314 q -8 -1 -8 -8 L46 142 q 1 -8 8 -8 L293 134 q 8 2 7 12 L300 166 " ></path>
+									<path d="M283,304 L283 143 68 143 68 304 283 304"></path>
+								</g>
+								<g class="phone">
+									<path d="M257,174 q 1 -8 8 -8 L324 166 q 8 2 7 12 L330 305 q 2 8 -9 10 L265 315 q -8 -1 -8 -8 L257 174" ></path>
+									<path d="M325,184 L262 184 262 297 325 297 325 184" ></path>
+									<circle cx="295" cy="306" r="4" stroke-width="1"/>
+								</g>
+							</svg>
+							<div class="moveYuanbg">
+							</div>
+							<div class="colorclouds">
+								<div class="colorcloudsc">
+									<div class="colorcolud">
+										<div class="colorcoludc">
+											<div class="txt">
+												<p>全网<br>营销</p>
+											</div>
+											<div class="cloudline" style="top:88px;">
+												<div class="cloudline1" style="height:280px;"></div>
+												<div class="cloudline2" style="width:300px;"></div>
+											</div>
+										</div>
+									</div>
+									<div class="colorcolud">
+										<div class="colorcoludc">
+											<div class="txt">
+												<p>技术<br>开发</p>
+											</div>
+											<div class="cloudline" style="top:74px;">
+												<div class="cloudline1" style="height:260px;"></div>
+												<div class="cloudline2" style="width:200px;"></div>
+											</div>
+										</div>
+									</div>
+									<div class="colorcolud">
+										<div class="colorcoludc">
+											<div class="txt">
+												<p>电商<br>创业</p>
+											</div>
+											<div class="cloudline" style="top:100px;">
+												<div class="cloudline1" style="height:200px;"></div>
+												<div class="cloudline2" style="width:200px;"></div>
+											</div>
+										</div>
+									</div>
+									<div class="colorcolud">
+										<div class="colorcoludc">
+											<div class="txt">
+												<p>品牌<br>管理</p>
+											</div>
+											<div class="cloudline" style="top:60px;">
+												<div class="cloudline1" style="height:300px;"></div>
+												<div class="cloudline2" style="width:200px;"></div>
+											</div>
+										</div>
+									</div>
+									<div class="colorcolud">
+										<div class="colorcoludc">
+											<div class="txt">
+												<p>渠道<br>合作</p>
+											</div>
+											<div class="cloudline" style="top:108px;">
+												<div class="cloudline1" style="height:300px;"></div>
+												<div class="cloudline2" style="width:0px;"></div>
+											</div>
+										</div>
+
+									</div>
+									<div class="colorcolud">
+										<div class="colorcoludc">
+											<div class="txt">
+												<p>水产<br>养殖</p>
+											</div>
+											<div class="cloudline" style="top:54px;">
+												<div class="cloudline1" style="height:260px;"></div>
+												<div class="cloudline2 cloudline3move" style="width:200px;"></div>
+											</div>
+										</div>
+
+									</div>
+									<div class="colorcolud">
+										<div class="colorcoludc">
+											<div class="txt">
+												<p>策划<br>推广</p>
+											</div>
+											<div class="cloudline" style="top:78px;">
+												<div class="cloudline1" style="height:254px;"></div>
+											</div>
+										</div>
+
+									</div>
+									<div class="colorcolud">
+										<div class="colorcoludc">
+											<div class="txt">
+													<p>电商<br>人才</p>
+											</div>
+											<div class="cloudline" style="top:96px;">
+												<div class="cloudline1" style="height:228px;"></div>
+												<div class="cloudline2 cloudline3move" style="width:160px;"></div>
+											</div>
+										</div>
+									</div>
+									<div class="colorcolud">
+										<div class="colorcoludc">
+											<div class="txt">
+													<p>商业<br>摄影</p>
+											</div>
+											<div class="cloudline" style="top:96px;">
+												<div class="cloudline1" style="height:228px;"></div>
+												<div class="cloudline2 cloudline3move" style="width:160px;"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- 第四屏 -->
+		<div class="section section4" style="display:none;">
+			<iframe data-src="https://720yun.com/t/d83jrdhk5m4"></iframe>
+			<div class="iframe-close">
+				<div class="close-tip">关闭360°全景</div>
+			</div>
+			<div class="iframe-mask">
+				<img class="iframe-play" src="/static/images/index/iframe-play.png" />
+			</div>
+		</div>
+		<!-- 第五屏 -->
+		<div class="section section5" style="display:none;">
+			<!-- 新闻 -->
+			<div class="info container clearfix">
+				<div class="news-title clearfix">
+					<h3>新闻<span>NEWS</span></h3>
+					<h5>
+						<a href="/xwzx/">
+							<div class="symbol">
+								<div class="cross"></div>
+								<div class="vert"></div>
+							</div>
+							查看更多<span>MORE</span>
+						</a>
+					</h5>
+				</div>
+				<div class="news-content clearfix">
+					<div class="news-left fl">
+						<div class="news-box">
+							<div class="swiper-container">
+							    <div class="swiper-wrapper">
+							    	<div class="swiper-slide clearfix">
+										<div class="img fl">
+											<a href="/xwzx/jtdt/72.html"><img src="/static/uploads/190706/1-1ZF6160020425.jpg" alt="喜讯丨壹典摄影成功入选"></a>
+										</div>
+										<div class="news-info fr">
+											<h2><a href="/xwzx/jtdt/72.html">喜讯丨壹典摄影成功入选广东省摄影行业协会会员单位</a></h2>
+											<h6 class="clearfix"><span class="author fl">作者：元典集团</span><span class="time fr">2019/07/06</span></h6>
+											<p class="desc"><a href="/xwzx/jtdt/72.html">4月16日，广东省摄影行业协会2019年会员联谊会暨第三届一次理事会，在佛山国艺度假酒店成功召开，壹典摄影受邀参加此次大会。会议还邀请了广东省摄影行业协会会长刘惠昌、创会会												</a></p>
+											<div class="in-detail-box">
+												<a href="/xwzx/jtdt/72.html">
+													<div class="in-detail"></div>
+												</a>
+											</div>
+										</div>
+									</div>
+<div class="swiper-slide clearfix">
+										<div class="img fl">
+											<a href="/xwzx/jtdt/71.html"><img src="/static/uploads/190706/1-1ZF6155R0132.jpg" alt="元典科技受邀参加2019深圳"></a>
+										</div>
+										<div class="news-info fr">
+											<h2><a href="/xwzx/jtdt/71.html">元典科技受邀参加2019深圳互联网3·15诚信大会</a></h2>
+											<h6 class="clearfix"><span class="author fl">作者：元典小编</span><span class="time fr">2019/07/06</span></h6>
+											<p class="desc"><a href="/xwzx/jtdt/71.html">2019年3月15日下午，由深圳市市场监督管理局指导，深圳市互联网学会主办，元典科技协办的2019深圳互联网315诚信大会在福田区人民大厦举行。据悉，深圳互联网315大会迄今为止已经连												</a></p>
+											<div class="in-detail-box">
+												<a href="/xwzx/jtdt/71.html">
+													<div class="in-detail"></div>
+												</a>
+											</div>
+										</div>
+									</div>
+<div class="swiper-slide clearfix">
+										<div class="img fl">
+											<a href="/xwzx/jtdt/74.html"><img src="/static/uploads/190706/1-1ZF6155351947.jpg" alt="元典集团贯彻落实深圳市"></a>
+										</div>
+										<div class="news-info fr">
+											<h2><a href="/xwzx/jtdt/74.html">元典集团贯彻落实深圳市龙华区新建会基层工会干部履职培训会议精神</a></h2>
+											<h6 class="clearfix"><span class="author fl">作者：元典集团</span><span class="time fr">2019/07/06</span></h6>
+											<p class="desc"><a href="/xwzx/jtdt/74.html">2019年6月18日，为提升新成立及换届工会的企业及社区工会干部的业务能力，龙华区总工会于以送培训下街道的形式，在凯龙国际酒店开展了新建会基层工会干部履职培训，各企业工会主												</a></p>
+											<div class="in-detail-box">
+												<a href="/xwzx/jtdt/74.html">
+													<div class="in-detail"></div>
+												</a>
+											</div>
+										</div>
+									</div>
+<div class="swiper-slide clearfix">
+										<div class="img fl">
+											<a href="/xwzx/jtdt/73.html"><img src="/static/uploads/190706/1-1ZF61552255Y.jpg" alt="古越龙山到访元典集团，"></a>
+										</div>
+										<div class="news-info fr">
+											<h2><a href="/xwzx/jtdt/73.html">古越龙山到访元典集团，共同探讨企业互联网营销之道</a></h2>
+											<h6 class="clearfix"><span class="author fl">作者：元典集团</span><span class="time fr">2019/07/06</span></h6>
+											<p class="desc"><a href="/xwzx/jtdt/73.html">2019年6月29日，绍兴黄酒集团古越龙山董事长钱肖华等一行人到访元典集团，双方高层领导就5G时代下黄酒如何借势营销开展座谈进行深入探讨，共同探讨互联网营销之道。 本次到访，绍												</a></p>
+											<div class="in-detail-box">
+												<a href="/xwzx/jtdt/73.html">
+													<div class="in-detail"></div>
+												</a>
+											</div>
+										</div>
+									</div>
+
+							    </div>
+							    <div class="swiper-pagination"></div>
+						  	</div>
+						</div>
+					</div>
+					<div class="news-right fr">
+						<div class="news-list">
+							<ul>
+								<li>
+									<a href="/xwzx/jtdt/75.html">
+										<h4>元典集团吕元枢被评选为广东省新昌商会常务副会长</h4>
+										<div class="new-tip clearfix">
+											<span class="time fl">2019/07/23</span>
+											<div class="detail fr">
+												<div class="symbol">
+													<div class="cross"></div>
+													<div class="vert"></div>
+												</div>
+												进入详情
+											</div>
+										</div>
+									</a>
+								</li>
+<li>
+									<a href="/xwzx/jtdt/7.html">
+										<h4>元典集团董事长吕元枢：在时代的洪流中，要不断前进</h4>
+										<div class="new-tip clearfix">
+											<span class="time fl">2019/07/16</span>
+											<div class="detail fr">
+												<div class="symbol">
+													<div class="cross"></div>
+													<div class="vert"></div>
+												</div>
+												进入详情
+											</div>
+										</div>
+									</a>
+								</li>
+<li>
+									<a href="/xwzx/jtdt/72.html">
+										<h4>喜讯丨壹典摄影成功入选广东省摄影行业协会会员单位</h4>
+										<div class="new-tip clearfix">
+											<span class="time fl">2019/07/06</span>
+											<div class="detail fr">
+												<div class="symbol">
+													<div class="cross"></div>
+													<div class="vert"></div>
+												</div>
+												进入详情
+											</div>
+										</div>
+									</a>
+								</li>
+
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 底部 -->
+			<!-- 底部 -->
+{% endblock %}
+
+{% block bodyfoot %}
+		</div>
+	</div>
+
+	<script src="/static/js/walkway.min.js"></script>
+  <script>
+		// 全屏
+		$('.introduction').hide()
+		var fullpage = new fullpage('#main', {
+			licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+			autoScrolling: true,
+			scrollHorizontally: true,
+			navigation: true,
+			scrollBar: false,
+			slidesNavigation: true,
+			slidesNavPosition: 'bottom',
+			scrollOverflow: true,
+			scrollingSpeed: 1000,
+			// afterLoad: function(origin){
+			// 	var loadedSection = this;
+			// },
+			onLeave: function (origin, destination, direction) {
+				if (destination.index == 1) {
+					window.setTimeout(function () {
+						$('.con2video .con2videoboxbg').hide();
+					}, 800);
+				} else {
+					window.setTimeout(function () {
+						$('.con2video .con2videoboxbg').show();
+						$(".pic>video").each(function(index,item){
+							$(item)[0].pause();
+						});
+					}, 500);
+				}
+				if (destination.index == 2) {
+					var svg2 = new Walkway({
+						selector: '#ps4-1',
+						duration: 3500
+					}).draw();
+					var svg1 = new Walkway({
+						selector: '#ps4-2',
+						duration: 3500
+					}).draw();
+					window.setTimeout(function () {
+						$('svg').fadeOut();
+						$('.introduction').fadeIn(1000);
+						$('.moveYuanbg').fadeIn();
+						$('.colorcloudsc').fadeIn(1200);
+					}, 3500);
+				} else {
+					$('svg').fadeIn();
+					$('.introduction').fadeOut();
+					$('.moveYuanbg').fadeOut();
+					$('.colorcloudsc').fadeOut();
+				}
+				if (destination.index == 3) {
+					$(".logo").hide();
+					$('.head').css({
+						'box-shadow': 'none',
+						'background': 'transparent'
+					});
+					return true;
+				} else {
+					$(".logo").show();
+				}
+				// 导航
+				if (destination.index == 2) {
+					$('.head').css({
+						'box-shadow': '0 5px 50px rgba(143,143,143,0.2)',
+						'background': '#fff'
+					});
+				} else if (destination.index == 4) {
+					$('.head').css({
+						'box-shadow': '0 5px 50px rgba(143,143,143,0.2)',
+						'background': '#fff'
+					});
+				} else {
+					$('.head').css({
+						'box-shadow': 'none',
+						'background': 'transparent'
+					});
+				}
+			}
+		});
+		$('.section5').show();
+		$('.section4').show();
+		$('.section3').show();
+		$('.section2').show();
+	</script>
+<script>
+		var swiper = new Swiper('.swiper-container', {
+			pagination: {
+				el: '.swiper-pagination',
+			},
+			loop: true,
+			autoplay:true
+		});
+
+		//关闭全景
+		close();
+
+		function close() {
+			$('.iframe-close').click(function () {
+				$(this).hide();
+				$('.iframe-mask').show();
+			})
+			$('.iframe-play').click(function () {
+				$('.iframe-mask').hide();
+				$('.iframe-close').show();
+			})
+		}
+		$('.head .nav ul li').eq(0).addClass('nav-active');
+
+		var clickTimer = 900;
+		var onOff= true;
+		var onOff1= true;
+		var onOff2= true;
+		var onOff3= true;
+		function moveInCenterLeft(_this) {
+			onOff= false;
+			window.setTimeout(function () {
+				$(".pic .videobox ul  li").eq(1).find('.videobg').hide();
+			}, clickTimer);
+			$(_this).stop(true).animate({
+				width: '74.8%',
+				left: '12.7%'
+			}, clickTimer)
+			$(".pic .videobg ul  li").eq(0).stop(true).animate({
+				left: '0.5%',
+				width: "12.3%",
+			}, clickTimer);
+			$(".pic .videobg ul  li").eq(2).stop(true).animate({
+				left: '75.2%',
+				width: "12.3%",
+			}, clickTimer);
+			$(".pic .videobg ul  li").eq(3).stop(true).animate({
+				left: '87.5%',
+				width: "12.3%",
+			}, clickTimer);
+			$(".pic .videobox ul li").eq(1).show().siblings().hide();
+			$('.qianxiang').css({'display':'block'})
+			$('.yuandian').css({'display':'none'})
+			$('.yuandian')[0].pause();
+			$('.wanghai').css({'display':'none'})
+			$('.wanghai')[0].pause();
+			$('.yidian').css({'display':'none'})
+			$('.yidian')[0].pause();
+			var playVtime=window.setTimeout(function(){
+				$('.qianxiang')[0].play();
+				window.clearTimeout(playVtime)
+				playVtime=null
+			},clickTimer)
+		};
+
+		function moveInCenterRight(_this) {
+			onOff= false;
+			window.setTimeout(function () {
+				$(".pic .videobox ul  li").eq(2).find('.videobg').hide();
+			}, clickTimer);
+			$(_this).stop(true).animate({
+				width: '74.8%',
+				left: '25.1%'
+			}, clickTimer)
+			$(".pic .videobg ul  li").eq(0).stop(true).animate({
+				left: '0.5%',
+				width: "12.3%",
+			}, clickTimer);
+			$(".pic .videobg ul  li").eq(1).stop(true).animate({
+				left: '12.8%',
+				width: "12.3%",
+			}, clickTimer);
+			$(".pic .videobg ul  li").eq(3).stop(true).animate({
+				left: '87.5%',
+				width: "12.3%",
+			}, clickTimer);
+			$(".pic .videobox ul li").eq(2).show().siblings().hide();
+			$('.wanghai').css({'display':'block'})
+			$('.yuandian').css({'display':'none'})
+			$('.yuandian')[0].pause();
+			$('.qianxiang').css({'display':'none'})
+			$('.qianxiang')[0].pause();
+			$('.yidian').css({'display':'none'})
+			$('.yidian')[0].pause();
+			var playVtime=window.setTimeout(function(){
+				$('.wanghai')[0].play();
+				window.clearTimeout(playVtime)
+				playVtime=null
+			},clickTimer)
+		};
+
+		function moveInRight(_this) {
+			onOff= false;
+			window.setTimeout(function () {
+				$(".pic .videobox ul  li").eq(3).find('.videobg').hide();
+			}, clickTimer);
+			$(_this).stop(true).animate({
+				width: '74.8%',
+				left: "37.4%"
+			}, clickTimer);
+			$(".pic .videobg ul  li").eq(0).stop(true).animate({
+				left: '0.5%',
+				width: "12.3%",
+			}, clickTimer);
+			$(".pic .videobg ul  li").eq(1).stop(true).animate({
+				left: '12.8%',
+				width: "12.3%",
+			}, clickTimer);
+			$(".pic .videobg ul  li").eq(2).stop(true).animate({
+				left: '25.1%',
+				width: "12.3%",
+			}, clickTimer);
+			$(".pic .videobox ul li").eq(3).show().siblings().hide();
+			$('.qianxiang').css({'display':'none'})
+			$('.qianxiang')[0].pause();
+			$('.yuandian').css({'display':'none'})
+			$('.yuandian')[0].pause();
+			$('.wanghai').css({'display':'none'})
+			$('.wanghai')[0].pause();
+			$('.yidian').css({'display':'block'})
+			var playVtime=window.setTimeout(function(){
+				$('.yidian')[0].play();
+				window.clearTimeout(playVtime)
+				playVtime=null
+			},clickTimer)
+
+		};
+
+		function moveInLeft(_this) {
+			onOff= false;
+			window.setTimeout(function () {
+				$(".pic .videobox ul li").eq(0).find('.videobg').hide();
+			}, clickTimer);
+			$(_this).stop(true).animate({
+				width: '74.8%',
+				left: "0.5%"
+			}, clickTimer);
+			$(".pic .videobg ul li").eq(1).stop(true).animate({
+				left: '62.9%',
+				width: "12.3%",
+			}, clickTimer);
+			$(".pic .videobg ul li").eq(2).stop(true).animate({
+				left: '75.2%',
+				width: "12.3%",
+			}, clickTimer);
+			$(".pic .videobg ul li").eq(3).stop(true).animate({
+				left: '87.5%',
+				width: "12.3%",
+			}, clickTimer);
+			$(".pic .videobox ul li").eq(0).show().siblings().hide();
+			$(".pic .videobox ul li").eq(0).find('.logImg1').stop(true).animate({
+				left: '47%',
+			}, clickTimer);
+			$('.qianxiang').css({'display':'none'})
+			$('.qianxiang')[0].pause();
+			$('.yuandian').css({'display':'block'})
+			$('.wanghai').css({'display':'none'})
+			$('.wanghai')[0].pause();
+			$('.yidian').css({'display':'none'})
+			$('.yidian')[0].pause();
+			var playVtime=window.setTimeout(function(){
+				$('.yuandian')[0].play();
+				window.clearTimeout(playVtime)
+				playVtime=null
+			},clickTimer)
+		};
+		$(".pic .videobg ul li").mouseenter(function () {
+			var _this = this;
+			if(onOff){
+				$(".pic .videobg ul li").eq(1).find('.logImg').hide();
+				$(".pic .videobox ul li").eq(1).find('.logImg1').show();
+				var closeTimerb=window.setTimeout(function(){
+					$(".pic .videobox ul li").eq(1).find('.logImg1').fadeOut();
+				window.clearTimeout(closeTimerb);
+			}, (clickTimer+550));
+
+			}else{
+				$(".pic .videobg ul li").eq(1).find('.logImg').show();
+				$(".pic .videobox ul li").eq(1).find('.logImg1').hide();
+			};
+			if ($(this).hasClass('tochangeopacity')) {
+				$(this).removeClass('tochangeopacity');
+			};
+			$(this).find('video').hide().parents('li').siblings().find('video').show();
+			$(this).find('.logImg').find('img').hide().siblings('p').show().parents('li').siblings().addClass(
+				'tochangeopacity').find('.logImg').find('img').css({
+				'transform': 'scale(0.8)'
+			}).show().siblings('p').hide()
+			var closeTimera=window.setTimeout(function(){
+				$(_this).find('.logImg').find('p').fadeOut();
+				window.clearTimeout(closeTimera);
+			}, (clickTimer+550));
+			$(".pic .videobox ul li").each(function (index, item) {
+				// $(item).find('video')[0].pause();
+				// $(item).find('.logImg1').hide();
+			})
+			// $(this).find('video')[0].play();
+			// 初始中间左侧点击
+			if ($(this).hasClass('center-left')) {
+				moveInCenterLeft(_this)
+				return false;
+			}
+			// 初始中间右侧点击
+			if ($(this).hasClass('center-right')) {
+				moveInCenterRight(_this)
+				return false;
+			}
+			// 初始左侧点击
+			if ($(this).hasClass('left')) {
+				moveInLeft(_this)
+				return false;
+			}
+			// 初始右侧点击
+			if ($(this).hasClass('right')) {
+				moveInRight(_this)
+				return false;
+			}
+		});
+		$('body').on('click', function(){
+			$(".pic video").each(function(index,item){
+				$(item)[0].muted= false;
+			});
+		});
+	</script>
+{% endblock %}
+{% block topcontrol %}
+{% endblock %}
+</html>

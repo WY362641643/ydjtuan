@@ -1,0 +1,607 @@
+{% extends 'parent_template.html' %}
+{% block title %}集团业务  /  千享科技_元典集团{% endblock %}
+
+{% block css %}
+  <link rel="stylesheet" href="/static/css/qxkjchange.css">
+{% endblock %}
+
+{% block body %}
+  <div class="mainbody">
+     <!-- banner -->
+    <div class="banner">
+      <img src="/static/images/qxkj/qxkj_change_banner.jpg" alt="">
+      <div class="title core">
+          <div class="banner-img">
+              <img src="/static/images/qxkj/qxkj_change_banner-txt.png" alt="">
+          </div>
+          <div class="squares">
+              <div class="square"></div>
+              <div class="square"></div>
+              <div class="square"></div>
+              <div class="square"></div>
+              <div class="square"></div>
+              <div class="square"></div>
+              <div class="square"></div>
+              <div class="square"></div>
+          </div>
+      </div>
+    </div>
+    <!-- change-video -->
+    <div class="qxvideo">
+      <div class="core">
+        <div class="videobg">
+            <video id="video-bg" src="http://www.ydjituan.com/videos/12.mp4" autoloop loop autoplay  muted="muted"></video>
+        </div>
+        <div class="qxvideobg">
+
+        </div>
+        <div class="qxvideotxt">
+            <div class="qxvideotxtc">
+              <div class="title">
+                <h3>千享科技</h3>
+                <p>互联网企业营销服务商</p>
+                <i></i>
+              </div>
+              <p>千享科技是一家专业的品牌营销服务公司，专注为企业提供 品牌策划、品牌建设、品牌推广、新媒体运营服务，致力于帮助中小企业、初创企业打造具有行业影响力的品牌，实现营销效果最大化。</p>
+              <!-- <div class="in-detail-box">
+                  <a href="javascript:;">
+                    <div class="in-detail"></div>
+                  </a>
+              </div> -->
+              <p class="link-more"><a href="http://www.1000-x.cn/">了解更多 <span class="arrow">
+                            <i class="mask"></i>
+                        </span></a></p>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- servicechannels -->
+    <div class="servicechannels">
+      <div class="title">
+        <h3>多渠道新营销服务项目</h3>
+        <p>NEW MARKETING SERVICES THROUGH MULTIPLE CHANNELS</p>
+      </div>
+      <div id="channelsWrap">
+        <ul>
+          <li>
+            <img src="/static/images/qxkj/qxkj_change_more1.jpg" alt="">
+            <div class="channelsTitle">
+              <h4>公众号运营</h4>
+              <i></i>
+            </div>
+            <div class="cove">
+              <h4>公众号运营</h4>
+              <i></i>
+              <p>
+                <a href="javascript:;">分析定位</a>
+              </p>
+              <p>
+                <a href="javascript:;">原创图文</a>
+              </p>
+              <p>
+                <a href="javascript:;">活动策划</a>
+              </p>
+              <p>
+                <a href="javascript:;">快速涨粉</a>
+              </p>
+              <div class="in-detail-box">
+                <a href="http://www.1000-x.cn/yewu/yunying/">
+                  <div class="in-detail"></div>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <img src="/static/images/qxkj/qxkj_change_more2.jpg" alt="">
+            <div class="channelsTitle">
+              <h4>网站建设</h4>
+              <i></i>
+            </div>
+            <div class="cove">
+              <h4>网站建设</h4>
+              <i></i>
+              <p>
+                <a href="javascript:;">网站策划</a>
+              </p>
+              <p>
+                <a href="javascript:;">网站设计</a>
+              </p>
+              <p>
+                <a href="javascript:;">网站制作</a>
+              </p>
+              <p>
+                <a href="javascript:;">前端开发</a>
+              </p>
+              <p>
+                <a href="javascript:;">后台程序开发</a>
+              </p>
+              <div class="in-detail-box">
+                <a href="http://www.1000-x.cn/yewu/wzdj/">
+                  <div class="in-detail"></div>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <img src="/static/images/qxkj/qxkj_change_more3.jpg" alt="">
+            <div class="channelsTitle">
+              <h4>SEO推广</h4>
+              <i></i>
+            </div>
+            <div class="cove">
+              <h4>SEO推广</h4>
+              <i></i>
+              <p>
+                <a href="javascript:;">关键词布局</a>
+              </p>
+              <p>
+                <a href="javascript:;">代码优化</a>
+              </p>
+              <p>
+                <a href="javascript:;">架构优化</a>
+              </p>
+              <p>
+                <a href="javascript:;">链接设置</a>
+              </p>
+              <p>
+                <a href="javascript:;">资源丰富</a>
+              </p>
+              <div class="in-detail-box">
+                <a href="http://www.1000-x.cn/yewu/SEO/">
+                  <div class="in-detail"></div>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <img src="/static/images/qxkj/qxkj_change_more4.jpg" alt="">
+            <div class="channelsTitle">
+              <h4>创意设计</h4>
+              <i></i>
+            </div>
+            <div class="cove">
+              <h4>创意设计</h4>
+              <i></i>
+              <p>
+                <a href="javascript:;">企业VI</a>
+              </p>
+              <p>
+                <a href="javascript:;">宣传物料</a>
+              </p>
+              <p>
+                <a href="javascript:;">创意H5</a>
+              </p>
+              <p>
+                <a href="javascript:;">产品画册</a>
+              </p>
+              <div class="in-detail-box">
+                <a href="http://www.1000-x.cn/yewu/visj/">
+                  <div class="in-detail"></div>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <img src="/static/images/qxkj/qxkj_change_more5.jpg" alt="">
+            <div class="channelsTitle">
+              <h4>小程序</h4>
+              <i></i>
+            </div>
+            <div class="cove">
+              <h4>小程序</h4>
+              <i></i>
+              <p>
+                <a href="javascript:;">小程序开发</a>
+              </p>
+              <p>
+                <a href="javascript:;">快速注册</a>
+              </p>
+              <p>
+                <a href="javascript:;">定制开发</a>
+              </p>
+              <p>
+                <a href="javascript:;">个性化设计</a>
+              </p>
+              <p>
+                <a href="javascript:;">运营推广</a>
+              </p>
+              <div class="in-detail-box">
+                <a href="http://www.1000-x.cn/yewu/cx/">
+                  <div class="in-detail"></div>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <img src="/static/images/qxkj/qxkj_change_more6.jpg" alt="">
+            <div class="channelsTitle">
+              <h4>短视频</h4>
+              <i></i>
+            </div>
+            <div class="cove">
+              <h4>短视频</h4>
+              <i></i>
+              <p>
+                <a href="javascript:;">短视频营销</a>
+              </p>
+              <p>
+                <a href="javascript:;">创意脚本</a>
+              </p>
+              <p>
+                <a href="javascript:;">视频拍摄</a>
+              </p>
+              <p>
+                <a href="javascript:;">后期剪辑</a>
+              </p>
+              <p>
+                <a href="javascript:;">广告投放</a>
+              </p>
+              <div class="in-detail-box">
+                <a href="http://www.1000-x.cn/yewu/video/">
+                  <div class="in-detail"></div>
+                </a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- brandbuilding -->
+    <div class="brandbuilding">
+        <div class="title">
+          <h3>全方位品牌打造</h3>
+          <p>COMPREHENSIVE BRAND BUILDING</p>
+        </div>
+        <div class="brandbuildingc core">
+          <ul class="ch-grid">
+            <li>
+              <div class="ch-item">
+                <div class="ch-item-t">
+                  <div>
+                    <img src="/static/images/qxkj/qxkj_change_brand1.png" alt="" class="ch-item-timg1">
+                  </div>
+                  <div>
+                    <img src="/static/images/qxkj/qxkj_change_brand1-1.png" alt="" class="ch-item-timg2">
+                  </div>
+                    <p>专案项目制作</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="ch-item">
+                <div class="ch-item-t">
+                  <div>
+                    <img src="/static/images/qxkj/qxkj_change_brand2.png" alt="" class="ch-item-timg1">
+                  </div>
+                  <div>
+                    <img src="/static/images/qxkj/qxkj_change_brand2-1.png" alt="" class="ch-item-timg2">
+                  </div>
+                    <p>量身定制方案</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="ch-item">
+                <div class="ch-item-t">
+                  <div>
+                    <img src="/static/images/qxkj/qxkj_change_brand3.png" alt="" class="ch-item-timg1">
+                  </div>
+                  <div>
+                    <img src="/static/images/qxkj/qxkj_change_brand3-1.png" alt="" class="ch-item-timg2">
+                  </div>
+                    <p>精细化服务流程</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="ch-item">
+                <div class="ch-item-t">
+                  <div>
+                    <img src="/static/images/qxkj/qxkj_change_brand4.png" alt="" class="ch-item-timg1">
+                  </div>
+                  <div>
+                    <img src="/static/images/qxkj/qxkj_change_brand4-1.png" alt="" class="ch-item-timg2">
+                  </div>
+                    <p>精准匹配用户</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="ch-item">
+                <div class="ch-item-t">
+                  <div>
+                    <img src="/static/images/qxkj/qxkj_change_brand5.png" alt="" class="ch-item-timg1">
+                  </div>
+                  <div>
+                    <img src="/static/images/qxkj/qxkj_change_brand5-1.png" alt="" class="ch-item-timg2">
+                  </div>
+                    <p>近千家媒体资源</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+      </div>
+    </div>
+    <!-- elitestudents -->
+    <div class="elitestudents" style="display:none;">
+      <div class="title">
+        <h3>资深营销团队</h3>
+        <p>ELITE STUDENTS</p>
+      </div>
+      <div class="team-slide core">
+        <div class="view">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                  <div class="swiper-slide-c">
+                      <div class="swiper-slide-l">
+                        <h4>白鹏</h4>
+                        <p>千享科技·首席营销官</p>
+                        <div><i></i></div>
+                        <p>全网营销、网站诊断、移动营销</p>
+                      </div>
+                      <div class="swiper-slide-r">
+                          <a href="javascript:;" target="_blank"><img src="/static/images/qxkj/qxkj_change_group1.png" alt=""></a>
+                      </div>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <div class="swiper-slide-c">
+                      <div class="swiper-slide-l">
+                        <h4>王中专</h4>
+                        <p>千享科技副总</p>
+                        <div><i></i></div>
+                        <p>品牌全案策划、品牌营销推广</p>
+                      </div>
+                      <div class="swiper-slide-r">
+                          <a href="javascript:;" target="_blank"><img src="/static/images/qxkj/qxkj_change_group2.png" alt=""></a>
+                      </div>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <div class="swiper-slide-c">
+                      <div class="swiper-slide-l">
+                        <h4>运营团队</h4>
+                        <p></p>
+                        <div><i></i></div>
+                        <p>SEO营销，开发技术，定制官网</p>
+                      </div>
+                      <div class="swiper-slide-r">
+                          <a href="javascript:;" target="_blank"><img style="margin-top: 92px;" src="/static/images/qxkj/qxkj_change_group3.png" alt=""></a>
+                      </div>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <div class="swiper-slide-c">
+                      <div class="swiper-slide-l">
+                        <h4>技术精英团队</h4>
+                        <p></p>
+                        <div><i></i></div>
+                        <p>SEO营销 <br>
+                          开发技术 <br>
+                          定制官网</p>
+                      </div>
+                      <div class="swiper-slide-r">
+                          <a href="javascript:;" target="_blank"><img style="margin-top: 80px;"  src="/static/images/qxkj/qxkj_change_group4.png" alt=""></a>
+                      </div>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <div class="swiper-slide-c">
+                      <div class="swiper-slide-l">
+                        <h4>营销精英团队</h4>
+                        <p></p>
+                        <div><i></i></div>
+                        <p>为企业定制最省钱, <br>
+                          最有效果的营销解决方案</p>
+                      </div>
+                      <div class="swiper-slide-r">
+                          <a href="javascript:;" target="_blank"><img style="margin-top: 46px;"  src="/static/images/qxkj/qxkj_change_group5.png" alt=""></a>
+                      </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="preview">
+          <div class="previewc">
+              <a class="arrow-left" href="#"></a>
+              <a class="arrow-right" href="#"></a>
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide active-nav">
+                      <div class="swiper-slide-c">
+                          <div class="swiper-slide-l">
+                            <h4>白鹏</h4>
+                            <p>首席营销官</p>
+                            <div><i></i></div>
+                          </div>
+                          <div class="swiper-slide-r">
+                              <a href="javascript:;" target="_blank"><img src="/static/images/qxkj/qxkj_change_group1.png" alt=""></a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                      <div class="swiper-slide-c">
+                          <div class="swiper-slide-l">
+                            <h4>王中专</h4>
+                            <p>千享科技副总</p>
+                            <div><i></i></div>
+                          </div>
+                          <div class="swiper-slide-r">
+                              <a href="javascript:;" target="_blank"><img src="/static/images/qxkj/qxkj_change_group2.png" alt=""></a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                      <div class="swiper-slide-c">
+                          <div class="swiper-slide-l">
+                            <h4>运营团队</h4>
+                            <p ></p>
+                            <div><i></i></div>
+                          </div>
+                          <div class="swiper-slide-r">
+                              <a href="javascript:;" target="_blank"><img src="/static/images/qxkj/qxkj_change_group3.png" alt=""></a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                      <div class="swiper-slide-c">
+                          <div class="swiper-slide-l">
+                            <h4>技术团队</h4>
+                            <p ></p>
+                            <div><i></i></div>
+                          </div>
+                          <div class="swiper-slide-r">
+                              <a href="javascript:;" target="_blank"><img src="/static/images/qxkj/qxkj_change_group4.png" alt=""></a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                      <div class="swiper-slide-c">
+                          <div class="swiper-slide-l">
+                            <h4>营销团队</h4>
+                            <p></p>
+                            <div><i></i></div>
+                          </div>
+                          <div class="swiper-slide-r">
+                              <a href="javascript:;" target="_blank"><img src="/static/images/qxkj/qxkj_change_group5.png" alt=""></a>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- service -->
+    <div class="serviceqy">
+      <div class="title">
+        <h3>服务企业</h3>
+        <p>SERVICE ENTERPRISES</p>
+      </div>
+      <div class="serviceqyc core">
+        <ul class="clearfix">
+          <li><div class="item">
+            <a href="javascript:;"></a>
+            <div class="information">
+              <a href="javascript:;"></a>
+            </div>
+          </div>
+        </li>
+          <li><div class="item">
+            <a href="javascript:;"></a>
+            <div class="information">
+              <a href="javascript:;"></a>
+            </div>
+          </div>
+        </li>
+          <li><div class="item">
+            <a href="javascript:;"></a>
+            <div class="information">
+              <a href="javascript:;"></a>
+            </div>
+          </div>
+        </li>
+          <li><div class="item">
+            <a href="javascript:;"></a>
+            <div class="information">
+              <a href="javascript:;"></a>
+            </div>
+          </div>
+        </li>
+          <li><div class="item">
+            <a href="javascript:;"></a>
+            <div class="information">
+              <a href="javascript:;"></a>
+            </div>
+          </div>
+        </li>
+          <li><div class="item">
+            <a href="javascript:;"></a>
+            <div class="information">
+              <a href="javascript:;"></a>
+            </div>
+          </div>
+        </li>
+          <li><div class="item">
+            <a href="javascript:;"></a>
+            <div class="information">
+              <a href="javascript:;"></a>
+            </div>
+          </div>
+        </li>
+          <li><div class="item">
+            <a href="javascript:;"></a>
+            <div class="information">
+              <a href="javascript:;"></a>
+            </div>
+          </div>
+        </li>
+          <li><div class="item">
+            <a href="javascript:;"></a>
+            <div class="information">
+              <a href="javascript:;"></a>
+            </div>
+          </div>
+        </li>
+          <li><div class="item">
+            <a href="javascript:;"></a>
+            <div class="information">
+              <a href="javascript:;"></a>
+            </div>
+          </div>
+        </li>
+          <li><div class="item">
+            <a href="javascript:;"></a>
+            <div class="information">
+              <a href="javascript:;"></a>
+            </div>
+          </div>
+        </li>
+          <li><div class="item">
+            <a href="javascript:;"></a>
+            <div class="information">
+              <a href="javascript:;"></a>
+            </div>
+          </div>
+        </li>
+          <li><div class="item">
+            <a href="javascript:;"></a>
+            <div class="information">
+              <a href="javascript:;"></a>
+            </div>
+          </div>
+        </li>
+          <li><div class="item">
+            <a href="javascript:;"></a>
+            <div class="information">
+              <a href="javascript:;"></a>
+            </div>
+          </div>
+        </li>
+          <li><div class="item">
+            <a href="javascript:;"></a>
+            <div class="information">
+              <a href="javascript:;"></a>
+            </div>
+          </div>
+        </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+  <!-- 底部 -->
+
+{% block htmlfoot %}
+<script src="/static/js/qxkchange.js"></script>
+<script type="text/javascript" src="/static/js/scrolltopcontrol.js"></script>
+<script type="text/javascript">
+  $(function(){
+    $('.nav li').eq(2).addClass('nav-active').siblings().removeClass('nav-active')
+  })
+</script>
+{% endblock %}
+</html>

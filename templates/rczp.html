@@ -1,0 +1,299 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <title>联系我们_元典集团</title>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/contuctus.css">
+  <script src="/js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript">if(window.location.toString().indexOf('pref=padindex') != -1){}else{if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){if(window.location.href.indexOf("?mobile")<0){try{if(/Android|Windows Phone|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)){window.location.href="/m/list.php?tid=6";}else if(/iPad/i.test(navigator.userAgent)){}else{}}catch(e){}}}}</script>
+</head>
+<body>
+
+  <!-- 导航 -->
+<div class="head">
+    <div class="head-in">
+        <div class="logo fl">
+            <a href="/"><img src="/images/logo.png" alt=""></a>
+      	</div>
+        <div class="nav fr">
+            <ul class="clearfix">
+                <li class="nav-active"><a href="/">首页</a></li>
+                <li><a href="/jtjj/">集团简介</a></li>
+                <li class="downdrop">
+                    <a href="/jtyw/">集团业务</a>
+                    <dl>
+                        <dd><a href="/jtyw/ydkj/">元典科技</a></dd>
+                        <dd><a href="/jtyw/qxkj/">千享科技</a></dd>
+                        <dd><a href="/jtyw/whsc/">望海水产</a></dd>
+                        <dd><a href="/jtyw/yidian/">壹典摄影</a></dd>
+                    </dl>
+                </li>
+                <li><a href="/hxtd/">核心团队</a></li>
+                <li><a href="/hzhb/">合作伙伴</a></li>
+                <li><a href="/xwzx/jtdt/">集团动态</a></li>
+                <li><a href="/lxwm/">联系我们</a></li>
+                <li><a href="/rczp/">人才招聘</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+  <div class="mainbody">
+     <!-- banner -->
+    <div class="banner">
+      <img src="/images/contuct_us_banner.jpg" alt="">
+      <div class="title core">
+          <div class="banner-img">
+            <img src="/images/contuct_us_banner-txt.png" alt="">
+          </div>
+          <div class="squares">
+            <img src="/images/contuct_us_banner-logo.png" alt="">
+          </div>
+      </div>
+    </div>
+    <div class="contact-us core">
+      <div class="title">
+        <h2>HELLO!&nbsp;您好</h2>
+      </div>
+      <div class="contact-ifo">
+        <p><span>电话:</span>400-0399-386</p>
+        <p style="display:none;"><span>QQ:</span>4000399386</p>
+        <p><span>地址:</span>深圳市龙华区东环二路8号中执时代广场B座23、24楼</p>
+      </div>
+      <div class="contact_form">
+        <form action="/plus/diy.php" enctype="multipart/form-data" method="post" id="alert_form">
+          <input type="hidden" name="action" value="post" />
+          <input type="hidden" name="diyid" value="1" />
+          <input type="hidden" name="do" value="2" />
+          <div class="form_top">
+            <div class="input">
+                <input name='name' id='name' class="username" type="text" placeholder="请输入您的姓名(必填)" autocomplete="off">
+            </div>
+            <div class="input">
+              <input name='telphone' id='telphone' class="phone" type="text" class="ind5_pho" placeholder="请输入您的电话(必填)" autocomplete="off">
+            </div>
+            <div class="input">
+              <input name='wechart' id='wechart' class="ind5_qq" placeholder="QQ/微信" autocomplete="off">
+            </div>
+            <div class="input" style="display:none;">
+              <input type="text" name="addtime" id="addtime" style="width:250px" class="intxt" value="">
+            </div>
+            <div class="input" style="display:none;">
+              <input type="text" name="ip" id="ip" style="width:250px" class="intxt" value="">
+            </div>
+          </div>
+          <div class="form_msg">
+              <textarea name='messages' id='messages' style="resize:none"  placeholder="留言："></textarea>
+          </div>
+          <input type="hidden" name="dede_fields" value="name,text;telphone,text;wechart,text;messages,text;addtime,text;ip,text" />
+          <input type="hidden" name="dede_fieldshash" value="726b7a892dd62145411442954e599e4a" /></table>
+          <a class="alert-sub" href="javascript:;" onclick="alert_form();">
+              提交留言
+          </a>
+      </form>
+      </div>
+    </div>
+    <div class="map" id="allmaps">
+    </div>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=S3mC7ERjKkXI7MnnYusIXG5EbmpWMEuw"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.js"></script>
+	  <link rel="stylesheet" href="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.css" />
+    <script type="text/javascript">
+      var map = new BMap.Map("allmaps");
+      var point = new BMap.Point(114.043212,22.662638);
+      map.centerAndZoom(point, 16);
+      var myIcon = new BMap.Icon("/images/map_point.png", new BMap.Size(32,43));
+	    var marker2 = new BMap.Marker(point,{icon:myIcon});  // 创建标注
+	    map.addOverlay(marker2);              // 将标注添加到地图中
+
+      var label = new BMap.Label("深圳市元典科技发展有限公司",{offset:new BMap.Size(-86,-40)});
+      marker2.setLabel(label);
+      map.enableScrollWheelZoom(true);
+
+      var content = '<div style="margin:0;line-height:20px;padding:2px;">' +
+                    '<img src="/images/bdmap_yd.jpg" alt="" style="float:right;zoom:1;overflow:hidden;width:100px;height:100px;margin-left:3px;"/>' +
+                    '地址：深圳市龙华区东环二路8号中执时代广场B座23-24楼<br/><br/>电话：400-0399-386<br/>' +
+                  '</div>';
+
+      //创建检索信息窗口对象
+      var searchInfoWindow = null;
+      searchInfoWindow = new BMapLib.SearchInfoWindow(map, content, {
+          title  : "深圳市元典科技发展有限公司",      //标题
+          width  : 290,             //宽度
+          height : 105,              //高度
+          panel  : "panel",         //检索结果面板
+          enableAutoPan : true,     //自动平移
+          searchTypes   :[
+            BMAPLIB_TAB_SEARCH,   //周边检索
+            BMAPLIB_TAB_TO_HERE,  //到这里去
+            BMAPLIB_TAB_FROM_HERE //从这里出发
+          ]
+        });
+        marker2.addEventListener("click", function(e){
+          searchInfoWindow.open(marker2);
+        })
+          label.setStyle({
+              color : "#222",
+              fontSize : "14px",
+              backgroundColor :"0.05",
+              border :"0",
+              height : "20px",
+              padding: "4px 12px",
+              lineHeight : "20px",
+              backgroundColor: '#fff',
+              borderRadius: '3px',
+              boxShadow: '0 0 4px #111',
+          });
+    </script>
+  </div>
+  <!-- 底部 -->
+  <!-- 底部 -->
+<div class="footer">
+	<div class="container">
+		<div class="foot-top">
+			<div class="foot-nav">
+				<ul>
+					<li><a href="/jtjj/">集团简介</a><div class="line"></div><div class="up_line"></li>
+					<li class="downdrop"><a href="/jtyw/">集团业务</a>
+						<dl>
+							<dd><a href="/jtyw/ydkj/">元典科技</a></dd>
+							<dd><a href="/jtyw/qxkj/">千享科技</a></dd>
+							<dd><a href="/jtyw/whsc/">望海水产</a></dd>
+							<dd><a href="/jtyw/yidian/">壹典摄影</a></dd>
+						</dl>
+						<div class="line"></div>
+						<div class="up_line"></div>
+					</li>
+					<li><a href="/hxtd/">核心团队</a><div class="line"></div><div class="up_line"></div></li>
+					<li><a href="/hzhb/">合作伙伴</a><div class="line"></div><div class="up_line"></div></li>
+					<li><a href="/xwzx/">新闻中心</a><div class="line"></div><div class="up_line"></div></li>
+					<li><a href="/lxwm/">联系我们</a><div class="line"></div><div class="up_line"></div></li>
+					<li><a href="/rczp/">人才招聘</a><div class="line"></div><div class="up_line"></div></li>
+				</ul>
+			</div>
+			<div class="foot-contact fr">
+				<h5>咨询热线</h5>
+				<p class="phone">400-0399-386</p>
+				<div class="qq"><a href="javascript:;" onclick="qqclick()">立即咨询</a></div>
+			</div>
+			<div class="foot-top-line fr"></div>
+		</div>
+		<div class="foot-links">
+			<span>友情链接：</span>
+			<a href='http://www.szyuandian.com' target='_blank'>元典科技</a> <a href='http://www.1000-x.cn/' target='_blank'>千享科技</a> <a href='http://www.91wanghai.com' target='_blank'>望海水产</a> <a href='https://www.1dsy.net' target='_blank'>壹典摄影</a>
+		</div>
+	</div>
+	<div class="foot-hr"></div>
+	<div class="container">
+		<div class="foot-bottom clearfix">
+			<div class="address fl">
+				地址：深圳市龙华区东环二路8号中执时代广场B座23、24楼
+			</div>
+			<div class="beian fr">
+				Copy Right &copy;深圳市元典科技发展有限公司 | <a href="/data/sitemap.html">网站地图</a> | <a href="http://www.miitbeian.gov.cn/" rel="nofollow" target="_blank"> 粤ICP备15102969号-15</a>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+	function qqclick(){
+		window.open("http://wpa.qq.com/msgrd?v=3&uin=4000399386&site=qq&menu=yes");
+	}
+</script>
+<script>
+	var _hmt = _hmt || [];
+
+	(function() {
+
+		var hm = document.createElement("script");
+
+		hm.src = "https://hm.baidu.com/hm.js?d808176521e8007b265db24c3dc54edb";
+
+		var s = document.getElementsByTagName("script")[0];
+
+		s.parentNode.insertBefore(hm, s);
+
+	})();
+</script>
+</body>
+<script>
+  function alert_form(){
+    var phonenumber = $("#alert_form .phone").val();
+    var username = $("#alert_form .username").val();
+    var wechartn= $("#alert_form #wechart").val();
+    var isName=/^[\u4E00-\u9FA5\uf900-\ufa2d·s]{1,20}$/;
+    if (username == "" || null) {
+        alert("请输入您的姓名!");
+        return false;
+    };
+    if(!(isName.test(username))){
+      alert("请输入姓名有误，请重新输入!");
+      $("#alert_form .username").val('');
+      return false;
+    }
+    var isPhone = /^([0-9]{3,4}-)?[0-9]{7,8}$/;
+    var isMob=/^((\+?86)|(\(\+86\)))?(13[0123456789][0-9]{8}|15[012356789][0-9]{8}|18[02356789][0-9]{8}|147[0-9]{8})$/;
+    if(!(isMob.test(phonenumber)||isPhone.test(phonenumber))){
+      alert("您输入的联系方式有误!");
+      return false;
+    }
+    var isWechart= /^([a-z]{4,20}|[A-Z]{4,20}|[0-9]{4,20})$/
+    if(!!wechartn){
+      if(!(isWechart.test(wechartn))){
+        alert("您输入的QQ或微信号码有误，请重新输入!");
+        return false;
+      };
+    };
+    var usrmessages = $("#messages").val();
+    if(!!usrmessages){
+      console.log(12334);
+      var reMessage= /select|update|delete|exec|count|'|"|=|;|>|<|%/i;
+      if((reMessage.test(usrmessages))){
+        alert("请您不要在留言信息中输入特殊字符和SQL关键字！");
+        return false;
+      };
+    };
+    // document.getElementById("alert_form").submit();
+    var dataString =
+     'name='+$("#name").val()+ //表单的name和id值必须一致，注意：这一行最前面不能带有'&'符号
+     '&telphone='+$("#telphone").val()+ //表单的name和id值必须一致，多个input请自行复制此行代码
+     '&wechart='+$("#wechart").val()+ //表单的name和id值必须一致，多个input请自行复制此行代码
+     '&messages='+$("#messages").val()+
+     '&addtime='+$("#addtime").val()+
+     '&ip='+$("#ip").val()+
+     '&action=post'+
+     '&diyid=1&do=2&dede_fields=name,text;telphone,text;wechart,text;messages,text;addtime,text;ip,text&dede_fieldshash=726b7a892dd62145411442954e599e4a';
+    $.ajax({
+      type:'post',
+      url:'/plus/diy.php',
+      data: dataString,
+      success: function(data){
+        var data= JSON.parse(data);
+        if(data.code==1){
+          alert("亲，感谢您的留言，我们会尽快安排工作人员和您联系，注意保存联系方式畅通哟！");
+          $("#name").val('');
+          $("#telphone").val('');
+          $("#wechart").val('');
+          $("#messages").val('');
+        }
+      },
+      error: function(err){
+        console.log(err);
+      }
+    })
+  };
+</script>
+<script type="text/javascript" src="/js/scrolltopcontrol.js"></script>
+<script type="text/javascript">
+  $(function(){
+    $('.nav li').eq(6).addClass('nav-active').siblings().removeClass('nav-active')
+  })
+</script>
+</html>
