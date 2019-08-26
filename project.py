@@ -56,6 +56,7 @@ def lxwm():
 # 人才招聘
 @app.route('/rczp/')
 def rczp():
+    pass
     return render_template('rczp.html')
 
 
